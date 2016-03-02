@@ -1,9 +1,9 @@
 # RemoveComment
 删除C/C++代码中的注释，Remove comments in C/C++ files
 
-删除C/C++代码中的连在一起的空行
+删除C/C++代码中连在一起的空行
 
-使用Python 3，不支持Python 2
+不支持Python 2
 
 用法：
 ```
