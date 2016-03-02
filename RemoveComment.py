@@ -348,8 +348,6 @@ if __name__ == '__main__':
         else:
             #第一个参数代表的路径不存在
             print("[-] 输入路径{0}不存在!".format(argv[1]))
-        #RemoveComment(argv[1], argv[2])
-        #RemoveAllCommentInFolder(argv[1], argv[2])
         print('[*] 处理完成')
     except Exception as e:
         print("[-] Remove comment from {0} failed: {1}".format(argv[1], e))
