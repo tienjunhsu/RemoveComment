@@ -13,7 +13,7 @@ class CodeMode:
     string = 3      # 字符串
     char = 4        # 单个字符
 
-code_ext_dict = {'h':'1', 'c':'1', 'cpp':'1', 'java':'1'}
+code_exts = ['h', 'c', 'cpp', 'java']
 
 def create_dir(dir_path):
     try:
@@ -295,7 +295,7 @@ def RemoveAllCommentInFolder(in_dir_path, out_dir_path):
         if (os.path.isfile(in_path)):
             #文件
             ext = os.path.splitext(in_name)[1][1:].lower()
-            if (ext in code_ext_dict):
+            if (ext in code_exts):
                 #C系的代码文件
                 try:
                     RemoveComment(in_path, out_path)
